@@ -1,3 +1,9 @@
+body {
+    padding-top: 90px; /* Adjust based on your navbar height */
+}
+
+
+
 .navigation-bar{
 background-color: #20e020;
 display: flex;
@@ -6,7 +12,10 @@ display: flex;
     padding: 20px;
     height: 70px;
     border-radius: 10px;
-
+    position: fixed; /* Fixes the navbar to the viewport */
+    top: 0; /* Positions it at the top */
+    width: 100%; /* Makes it span the full width of the page */
+    z-index: 1000; /* Ensures it stays above other content */
 }
 
 .navigation-bar a{
@@ -25,3 +34,132 @@ display: flex;
     height: 70px;
     border-radius: 50%;
 }
+
+.info{
+    margin-top: 10px;
+    text-align: center;
+}
+.info h1{
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    color: black;
+}
+
+.statistic{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 90px;
+}
+
+.statistic ul{
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    font-size: 18px; /* Font size for bullet points */
+    font-weight: 700; /* Bold text for emphasis */
+    line-height: 1.6; /* Line height for better readability */
+    color: #333333; /* Dark color for contrast */
+    margin-right: 10px;
+}
+
+.statistic ul li {
+    margin-bottom: 15px; /* Adds space between list items */
+    line-height: 1.5; /* Optional: increase line height for better readability */
+}
+
+.diagram{
+    background-image: url("https://img.freepik.com/free-photo/autumn-celebration-healthy-vegetarian-food-with-ripe-fruit-decoration-generated-by-ai_24640-100395.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid");
+    background-attachment: fixed; /* Makes the background stay fixed while scrolling */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    height: 100vh; /* Sets the height to full viewport, adjust as needed */
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    margin-top: 70px;
+    padding: 20px;
+
+}
+
+
+.diagram p{
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    font-weight: 700;
+    color: whitesmoke;
+    line-height: 1.8; /* Adjusts line spacing, try values like 1.5 or 1.8 */
+    word-spacing: 3px; /* Adds extra spacing between words, adjust as needed */
+    text-align: justify; /* Aligns text evenly on both sides */
+    padding-left: 20px; /* Adjust left padding as needed */
+    padding-right: 20px; /* Optional: add right padding for symmetry */
+    text-indent: 0; /* Ensures first line starts aligned with others */
+}
+.diagram img{
+    width: 50%;
+    height: auto;
+}
+
+.forbruger-tips{
+    background-image: url("https://img.freepik.com/free-photo/palatable-open-sandwiches-black_23-2147749518.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid");
+    background-attachment: fixed; /* Makes the background stay fixed while scrolling */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    height: 100vh; /* Sets the height to full viewport, adjust as needed */
+    margin-top: 70px;
+}
+
+.forbruger-tips h1{
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 70px;
+    text-align: left; /* Aligns the h1 text to the left */
+    padding-left: 20px;
+}
+
+.forbruger-tips ul{
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    color: whitesmoke;
+    line-height: 1.8; /* Adjusts line spacing, try values like 1.5 or 1.8 */
+    word-spacing: 3px; /* Adds extra spacing between words, adjust as needed */
+    max-width: 50%; /* Limits the list width to half the container */
+    padding-left: 20px; /* Adjust to bring text close to bullet points */
+    list-style-position: inside; /* Ensures bullets are inside the list box */
+}
+
+
+footer{
+    display: flex;
+    align-items: flex-start;
+    background-color: #20e020;
+    height: 100px;
+    justify-content: space-around;
+}
+
+footer p{
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    color: darkslategrey;
+}
+
+.socials{
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 15px; /* Adds space between each social media icon */
+}
+
+.socials img{
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.footer-logo{
+    width: 80px;
+    height: 80px;
+}
+
+
+
