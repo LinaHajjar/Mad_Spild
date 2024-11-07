@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="/MyCSS_index.css">
+    <title>Danmark Mod madspild</title>
 </head>
 <body>
-<h1>Hej</h1>
+<nav class="navigation-bar">
+    <!-- grøn til navigation bar inspisperer madspild  -->
+    <a th:href="@{/index}" class="home">
+        <img class="logo" src="https://img.freepik.com/premium-vector/circular-illustration-green-bucket-with-leaves_339976-60626.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid"></img>
+    </a>
+    <a th:href="@{/organisation}" class="Organisation">Organisation</a>
+    <a th:href="@{/virksomhed}" class="Virksomhed">Virksomhed</a>
+    <a th:href="@{/about}" class="Om os">Om os</a>
+</nav>
 </body>
 </html>
