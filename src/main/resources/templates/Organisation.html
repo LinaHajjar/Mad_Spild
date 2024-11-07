@@ -3,8 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>Organisation</title>
+    <link rel="stylesheet" type="text/css" href="/CSS-Organisation.css">
 </head>
+
 <body>
-<h1>Hej</h1>
+
+<!-- Shouldn't we make a class to the navigation bar, that we implement in each of classes:
+index, organisation, virksomhed, for at avoid redundancy?-->
+    <nav class="navigation-bar">
+        <a th:href="@{/index}" class="home">
+            <img class="logo" src="https://img.freepik.com/premium-vector/circular-illustration-green-bucket-with-leaves_339976-60626.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid"></img>
+        </a>
+        <a th:href="@{/organisation}" class="Organisation">Organisation</a>
+        <a th:href="@{/virksomhed}" class="Virksomhed">Virksomhed</a>
+        <a th:href="@{/about}" class="Om os">Om os</a>
+    </nav>
+
+<!--end of navigation bar copied from yousaf-->
+    <section id="volontær projekter">
+        <h1>Her kan du se en liste over de tidligere projekter med success.</h1>
+
+        <div class="event">
+            <a th:href="Sommer2022.html">
+                <img src="images/sommer2022.jpeg" alt="sommer2022">
+                <h3>Sommer 2022: et første skridt for at stoppe madspild</h3>
+            </a>
+        </div>
+
+
+        <div class="event">
+            <a th:href="Sommer2023.html">
+                <img src="images/sommer2023.jpeg" alt="Sommer 2023: stoppe madspild på mit arbejdsplads">
+                <h3>Sommer 2023: stoppe madspild på mit arbejdsplads</h3>
+            </a>
+        </div>
+
+        <div class="event">
+            <a th:href="Foraar2024.html">
+                <img src="images/foraar2024.jpeg" alt="Forår 2024: Genbrug mit overskudsmad?">
+                <h3>Forår 2024: Genbrug mit overskudsmad?</h3>
+            </a>
+        </div>
+
+        <div class="event">
+            <a th:href="Sommer2024.html">
+                <img src="images/sommer2024.png" alt="Sommer 2024: mindst holdbar til VS. bedst før">
+                <h3>Sommer 2024: mindst holdbar til VS. bedst før</h3>
+            </a>
+        </div>
+    </section>
+
+
+
+    <section id="Join-us">
+        <h1>Vil du være med?</h1>
+        <h2> Her kan du se en guideline over, hvem der kan tilslutte sig Danmark mod Madspild.</h2>
+        <p>For at blive en del af Danmark mod Madspild, skal din organisation:</p>
+        <p> 1. have fælles mål: bærdygtighed og grøn fremtid </p>
+        <p> 2. have aktivt Engagement: </p>
+        <p> Deltage i fælles initiativer og kampagner.</p>
+        <p>Bidrage med ekspertise og ressourcer til fælles projekter. </p>
+        <p> 3. transparens:</p>
+        <p> Være åben om sine tiltag og resultater.</p>
+        <p> Deltage i fælles evalueringer og rapporteringer.</p>
+        <h3> Er du klar til at gøre en forskel?</h3>
+        <p> Hvis din organisation opfylder disse retningslinjer, er du velkommen til at kontakte os for at blive en del af vores fællesskab.</p>
+        <h4> Sammen står vi for en mere bæredygtig fremtid for Danmark.</h4>
+    </section>
+
 </body>
 </html>
