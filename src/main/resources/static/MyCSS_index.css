@@ -193,5 +193,10 @@ footer p{
 .fact:hover .hidden-text {
     visibility: visible;
     opacity: 1;
-    transition-delay: 0s; /* No delay on hover-out */
+    transition-delay: 0.5s; /* No delay on hover-out */
 }
+
+.fact:hover{
+    text-shadow: 1px 1px 2px white, -1px -1px 2px white;
+}
+
