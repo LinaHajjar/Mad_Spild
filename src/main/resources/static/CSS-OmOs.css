@@ -54,7 +54,7 @@ body {
 }
 
 .parallax-section {
-    background-image: url('paralaxeffectomos.png');
+    background-image: url('images/paralaxeffectomos.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
