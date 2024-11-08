@@ -200,3 +200,29 @@ footer p{
     text-shadow: 1px 1px 2px white, -1px -1px 2px white;
 }
 
+
+.FN{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 100px;
+    gap: 20px;
+    border: 1px solid black; /* Slim border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 30px;
+
+}
+
+.FN-image{
+    width: 600px;
+    height: auto;
+}
+
+.FN-text p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin: 20px;
+    line-height: 1.8;
+    word-spacing: 3px;
+}
+
