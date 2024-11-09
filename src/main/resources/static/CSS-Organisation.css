@@ -30,15 +30,53 @@
 
 
 .event {
-    float: left;
-    width: 25%;
+    display: flex; /*flexbox to align image and text horizontally */
+    align-items: center; /* Vertically center align */
+    margin-bottom: 20px ; /* Add space between events */
     box-sizing: border-box;
     padding: 10px;
 }
 
+.event-content {
+    display: flex; /* Flexbox for aligning image and description */
+    align-items: center; /* Vertically align content */
+    gap: 20px; /* Space between image and text */
+}
+
 .event img {
-    width: 100%;
+    width: 400px; /*fixed images width*/
     height: auto;
+    border-radius: 10px; /*rounded corners for images*/
+}
+
+.event-description{
+    flex-grow: 1;    /* Allow the description to take up remaining space */
+
+}
+
+.event-description h3{
+    color: #333;
+    font-size: 18px;
+    font-weight: normal;        /* Adjust font weight for readability */
+    text-align: left;           /* Align text to the left */
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; /* Align items to the start */
+    gap: 20px; /* Space between the logo and text */
+}
+
+.container img{
+    width: 400px; /*fixed images width*/
+    height: auto;
+    border-radius: 10px; /*rounded corners for images*/
+}
+
+#Join-us {
+    max-width: 600px; /* Adjust width of the section */
+    line-height: 1.6; /* Improve text readability */
 }
 
 h1{
