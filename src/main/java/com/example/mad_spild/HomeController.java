@@ -27,7 +27,10 @@ public class HomeController {
             return "index";
         }
 
-
+     @GetMapping("/sommer2022")
+    public String Sommer2022(){
+            return "Sommer2022";
+     }
 
     }
 
