@@ -6,32 +6,24 @@
     <link rel="stylesheet" type="text/css" href="/CSS-Organisation.css">
 </head>
 <body>
-<!-- Shouldn't we make a class to the navigation bar, that we implement in each of classes:
-index, organisation, virksomhed, for at avoid redundancy?-->
-<nav class="navigation-bar">
-    <a th:href="@{/index}" class="home">
-        <img class="logo" src="https://img.freepik.com/premium-vector/circular-illustration-green-bucket-with-leaves_339976-60626.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid"></img>
-    </a>
-    <a th:href="@{/organisation}" class="Organisation">Organisation</a>
-    <a th:href="@{/virksomhed}" class="Virksomhed">Virksomhed</a>
-    <a th:href="@{/about}" class="Om os">Om os</a>
-</nav>
 
+<nav class="navigation-bar">
+    <a href="/index" class="logo-link">
+        <img class="logo" src="https://img.freepik.com/premium-vector/circular-illustration-green-bucket-with-leaves_339976-60626.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid" alt="Logo">
+    </a>
+    <div class="nav-links">
+        <a href="/organisation" class="nav-item">Organisation</a>
+        <a href="/virksomhed" class="nav-item">Virksomhed</a>
+        <a href="/about" class="nav-item">Om os</a>
+    </div>
+</nav>
+<!--end of navigation bar-->
 <h1>Sommer 2023: stoppe madspild på mit arbejdsplads</h1>
 
-<div>
-    <h5>Vores sommer-event om madspild blev en stor succes!</h5>
-    <h5>Med spændende workshops, inspirerende oplæg og lækre smagsprøver</h5>
-    <h5>fik vi alle masser af inspiration til at reducere madspild i hverdagen. </h5>
-    <h5>fik vi alle masser af inspiration til at reducere madspild i hverdagen.</h5>
-    <h5>Deltagerne var begejstrede for at lære nye måder at planlægge måltider</h5>
-    <h5>Deltagerne var begejstrede for at lære nye måder at planlægge måltider, mad og udnytte rester på</h5>
-    <h5>Vi er overbeviste om, at eventet har sat gang i en positiv udvikling på vores arbejdsplads.</h5>
-</div>
+<section id="eventsommer2023">
 
-<section id="event">
     <div class="event">
-        <div class="event-content">
+        <div class="event-image">
             <img src="images/Sommer2023_01.jpg" alt="billede 1 i sommer2023">
             <div class="event-description">
                 <h3>Dette billede, taget under event sommeren 2023, viser en alt for almindelig scene. </h3>
@@ -42,31 +34,34 @@ index, organisation, virksomhed, for at avoid redundancy?-->
     </div>
 
     <div class="event">
-        <div class="event-content">
-            <img src="images/Sommer2023_02.jpg" alt="billede 2 i sommer2023">
+        <div class="event-image">
             <div class="event-description">
-                <h3> Et engageret hold af kolleger samarbejder om at tilberede en lækker ret af rester </h3>
+                <h3> Et engageret hold af kolleger samarbejder</h3>
+                <h3>om at tilberede en lækker ret af rester </h3>
                 <h3> under vores madspildsevent i sommeren 2023. </h3>
-
             </div>
+            <img src="images/Sommer2023_02.jpg" alt="billede 2 i sommer2023">
         </div>
     </div>
 
     <div class="event">
-        <div class="event-content">
+        <div class="event-image">
             <img src="images/Sommer2023_03.jpg" alt="billede 3 i sommer2023">
             <div class="event-description">
                 <h3> Under vores event i sommeren 2023, </h3>
-                <h3> var der stor interesse for at lære nye måder at tilberede mad på...</h3>
-                <h3> Her ses et billede af deltagerne, der ivrigt følger kokkens anvisninger.</h3>
+                <h3> var der stor interesse for at lære</h3>
+                <h3>nye måder at tilberede mad på...</h3>
+                <h3> Her ses et billede af deltagerne,</h3>
+                <h3>der ivrigt følger kokkens anvisninger.</h3>
+
             </div>
         </div>
     </div>
 
+    <section class="parallax-section">
+    </section>
+
 </section>
-
-
-
 
 <h4> Sammen står vi for en mere bæredygtig fremtid for Danmark.</h4>
 

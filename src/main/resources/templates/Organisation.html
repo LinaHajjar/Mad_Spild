@@ -8,6 +8,8 @@
 
 <body>
 
+<!-- Shouldn't we make a class to the navigation bar, that we implement in each of classes:
+index, organisation, virksomhed, for at avoid redundancy?-->
 <nav class="navigation-bar">
     <a href="/index" class="logo-link">
         <img class="logo" src="https://img.freepik.com/premium-vector/circular-illustration-green-bucket-with-leaves_339976-60626.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid" alt="Logo">
@@ -24,50 +26,23 @@
         <h1>Her kan du se en liste over de tidligere projekter med success.</h1>
 
         <div class="event">
-                <div class="event-image">
-                    <a th:href="@{/Sommer2023}">
-                        <img src="images/sommer2023.jpeg" alt="Sommer 2023: stoppe madspild på mit arbejdsplads">
-                    </a>
-                    <div class="event-description">
-                        <h6>Sommer 2023: stoppe madspild på mit arbejdsplads</h6>
-                        <h3>Sommeren 2023 lancerede vi et initiativ for at reducere madspild på arbejdspladsen.</h3>
-                        <h3>Ved at implementere nye rutiner for indkøb og portionsanpasning,</h3>
-                        <h3>samt ved at opfordre medarbejderne til at være mere opmærksomme på deres madvaner,</h3>
-                        <h3>lykkedes det os at få medarbejderne til at fokusere på at reducere madspild.</h3>
-                        <h3>En madspildskonkurrence bidrog til at skabe engagement blandt medarbejderne,</h3>
-                        <h3>og vi lærte, at det er vigtigt at involvere alle for at opnå succes.</h3>
-                        <h5>tryk på billedet for mere informationer</h5>
-                    </div>
+            <div class="event-image">
+                <a th:href="@{/Sommer2024}">
+                    <img src="images/sommer2024.png" alt="Sommer 2024: mindst holdbar til VS. bedst før">
+                </a>
+                <div class="event-description">
+                    <h6>Sommer 2024: mindst holdbar til VS. bedst før</h6>
+                    <h3>Sommeren 2024 var præget af en øget fokus på fødevareforbrug og madspild.</h3>
+                    <h3>En central del af denne bevægelse var en kampagne,</h3>
+                    <h3>der uddybede forskellen mellem</h3>
+                    <h3>"Mindst Holdbar Til" og "Bedst Før"-mærkningerne på fødevarer.</h3>
+                    <h5>tryk på billedet for mere informationer</h5>
                 </div>
+            </div>
         </div>
-
-        <div class="event">
-                <div class="event-image">
-
-                    <div class="event-description">
-                        <h6>Sommeren 2022 var et vendepunkt i kampen mod madspild i Danmark.</h6>
-                        <h3>Flere initiativer blev sat i gang for at reducere den mængde mad,</h3>
-                        <h3>der hvert år ender i skraldespanden.</h3>
-                        <h3>Et af de vigtigste skridt var lanceringen af Danmarks første madspildsstrategi.</h3>
-                        <h3>Strategien indeholder en række tiltag, der skal bidrage til at reducere madspild i hele fødevarekæden,</h3>
-                        <h3>fra produktion til forbrug.</h3>
-                        <h5>tryk på billedet for mere informationer</h5>
-                    </div>
-                    <a th:href="@{/Sommer2022}">
-                        <img src="images/sommer2022.jpeg" alt="sommer2022">
-                    </a>
-                </div>
-        </div>
-
-        <section class="parallax-section">
-        </section>
-
 
         <div class="event">
             <div class="event-image">
-                <a th:href="@{/Foraar2024}">
-                    <img src="images/foraar2024.jpeg" alt="Forår 2024: Genbrug mit overskudsmad?">
-                </a>
                 <div class="event-description">
                     <h6>Forår 2024: Genbrug mit overskudsmad?</h6>
                     <h3>Forårets event opfordrede folk til at tænke over deres madvaner</h3>
@@ -75,6 +50,30 @@
                     <h3>Gennem en række initiativer, såsom opskrifter, tips og tricks,</h3>
                     <h3>lærte deltagerne, hvordan de kunne få mere ud</h3>
                     <h3>af deres madvarer og mindske deres madspild.</h3>
+                    <h5>tryk på billedet for mere informationer</h5>
+                </div>
+                <a th:href="@{/Foraar2024}">
+                    <img src="images/foraar2024.jpeg" alt="Forår 2024: Genbrug mit overskudsmad?">
+                </a>
+            </div>
+        </div>
+
+        <section class="parallax-section">
+        </section>
+
+        <div class="event">
+            <div class="event-image">
+                <a th:href="@{/Sommer2023}">
+                    <img src="images/sommer2023.jpeg" alt="Sommer 2023: stoppe madspild på mit arbejdsplads">
+                </a>
+                <div class="event-description">
+                    <h6>Sommer 2023: stoppe madspild på mit arbejdsplads</h6>
+                    <h3>Sommeren 2023 lancerede vi et initiativ for at reducere madspild på arbejdspladsen.</h3>
+                    <h3>Ved at implementere nye rutiner for indkøb og portionsanpasning,</h3>
+                    <h3>samt ved at opfordre medarbejderne til at være mere opmærksomme på deres madvaner,</h3>
+                    <h3>lykkedes det os at få medarbejderne til at fokusere på at reducere madspild.</h3>
+                    <h3>En madspildskonkurrence bidrog til at skabe engagement blandt medarbejderne,</h3>
+                    <h3>og vi lærte, at det er vigtigt at involvere alle for at opnå succes.</h3>
                     <h5>tryk på billedet for mere informationer</h5>
                 </div>
             </div>
@@ -91,12 +90,14 @@
                     <h3>fra produktion til forbrug.</h3>
                     <h5>tryk på billedet for mere informationer</h5>
                 </div>
-                <a th:href="@{/Sommer2024}">
-                    <img src="images/sommer2024.png" alt="Sommer 2024: mindst holdbar til VS. bedst før">
+                <a th:href="@{/Sommer2022}">
+                    <img src="images/sommer2022.jpeg" alt="sommer2022">
                 </a>
             </div>
         </div>
-    </section>
+
+        </section>
+
 
 <div class="container">
     <img src="images/logo.jpeg" alt="Logo" class="logo">

@@ -6,69 +6,62 @@
     <link rel="stylesheet" type="text/css" href="/CSS-Organisation.css">
 </head>
 <body>
-<!-- Shouldn't we make a class to the navigation bar, that we implement in each of classes:
-index, organisation, virksomhed, for at avoid redundancy?-->
+
 <nav class="navigation-bar">
-    <a th:href="@{/index}" class="home">
-        <img class="logo" src="https://img.freepik.com/premium-vector/circular-illustration-green-bucket-with-leaves_339976-60626.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid"></img>
+    <a href="/index" class="logo-link">
+        <img class="logo" src="https://img.freepik.com/premium-vector/circular-illustration-green-bucket-with-leaves_339976-60626.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid" alt="Logo">
     </a>
-    <a th:href="@{/organisation}" class="Organisation">Organisation</a>
-    <a th:href="@{/virksomhed}" class="Virksomhed">Virksomhed</a>
-    <a th:href="@{/about}" class="Om os">Om os</a>
+    <div class="nav-links">
+        <a href="/organisation" class="nav-item">Organisation</a>
+        <a href="/virksomhed" class="nav-item">Virksomhed</a>
+        <a href="/about" class="nav-item">Om os</a>
+    </div>
 </nav>
+<!--end of navigation bar-->
 
 <h1>Sommer 2024: mindst holdbar til VS. bedst før</h1>
 
-<div>
-    <h5>Sommeren 2024 igen et vendepunkt i kampen mod madspild:</h5>
-    <h5>Mindst holdbar til...</h5>
-    <h5>en ny måde at tænke om mad på: Vores sommer-event var en succes!.</h5>
-    <h5>Sammen udforskede vi, hvordan vi kan reducere madspild,</h5>
-    <h5>og samtidig nyde mere varieret og bæredygtig kost.</h5>
-</div>
-
-<section id="event">
+<section id="eventsommer2022">
 
     <div class="event">
-        <div class="event-content">
+        <div class="event-image">
             <img src="images/sommer2024_1.jpeg" alt="billede 2 i sommer2024">
             <div class="event-description">
                 <h3>Et glimt fra vores sommer-event,</h3>
                 <h3>hvor vi udfordrede vores vaner og smagte på nye muligheder.</h3>
                 <h3>Sammen står vi for en mere bæredygtig fremtid.</h3>
-
             </div>
         </div>
     </div>
 
     <div class="event">
-        <div class="event-content">
-            <img src="images/sommer2024_2.jpg" alt="billede 2 i sommer2024">
+        <div class="event-image">
             <div class="event-description">
                 <h3>"Mindst holdbar til... en ny begyndelse."</h3>
                 <h3>Dette spiller på sloganet og understreger,</h3>
                 <h3>at eventet markerede en ny måde at tænke om mad på. </h3>
             </div>
+            <img src="images/sommer2024_2.jpg" alt="billede 2 i sommer2024">
         </div>
     </div>
 
     <div class="event">
-        <div class="event-content">
+        <div class="event-image">
             <img src="images/sommer2024_3.jpeg" alt="billede 3 i sommer2024">
             <div class="event-description">
                 <h3>Denne infografik er super nyttig!</h3>
                 <h3>Det er nemt at blive forvirret over de forskellige datoer på madvarer, </h3>
                 <h3>men med denne guide</h3>
                 <h3>kan man nemt se,</h3>
-                <h3>hvad man kan gøre. 💡</h3>
+                <h3>hvad man kan gøre.💡</h3>
             </div>
         </div>
     </div>
 
+    <section class="parallax-section">
+    </section>
+
 </section>
-
-
-
 
 <h4> Sammen står vi for en mere bæredygtig fremtid for Danmark.</h4>
 
@@ -85,9 +78,6 @@ index, organisation, virksomhed, for at avoid redundancy?-->
     <p><strong>CVR: </strong>12356345</p>
 </footer>
 
-
-</body>
-</html>
 
 </body>
 </html>
