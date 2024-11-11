@@ -3,18 +3,21 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    line-height: 1.8;
+
 }
 
 body {
     padding-top: 90px; /* Space for fixed navbar */
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
     color: black;
     font-size: 18px;
+
     background-color: #2a9d8f;
 }
 h1, h2, h3 {
     font-size: 45px;
-    font-family: 'Baloo', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
 }
 
 /* Navbar container */
