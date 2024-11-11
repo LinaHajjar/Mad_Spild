@@ -78,64 +78,51 @@ body {
     text-align: center;
 }
 
-.event-row {
+.events-container {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between the two events */
 }
-
-.event-column1 {
-    flex: 0 0 auto;  /* Ensure the image column does not stretch */
-    margin: 0;  /* Remove margin between image and text */
-    justify-content: right;
-}
-
-.event-column1 img {
-    width: 50%;  /* You can adjust this to the desired width */
-    height: auto;
-    border-radius: 10px;
-    justify-content: right;
-}
-
-.event-column2 {
-    flex: 1;  /* This will make the text take up the remaining space */
-    padding-left: 20px; /* Optional: add some space between image and text */
-    justify-content: left;
-
-}
-
 
 .event {
-    display: flex; /*flexbox to align image and text horizontally */
-    align-items: center; /* Vertically center align */
-    margin-bottom: 20px; /* Add space between events */
-    box-sizing: border-box;
-    padding: 10px;
-}
-
-
-.event-content {
-    display: flex; /* Flexbox for aligning image and description */
-    align-items: center; /* Vertically align content */
-    gap: 20px; /* Space between image and text */
+    width: 48%;
+    border: 1px solid #ddd; /* Optional: adds a border around each event */
+    border-radius: 8px; /* Optional: rounds the corners */
+    overflow: hidden;
 }
 
 .event img {
-    width: 400px; /*fixed images width*/
+    display: block;
+    width: 50%;
     height: auto;
+    margin: 0 auto;
     border-radius: 10px; /*rounded corners for images*/
+    transition: transform 0.2s ease; /* Smooth transition */
 }
+    .event img:hover { /*hopes when the cursor is on it*/
+        transform: scale(1.1);
+    }
 
 .event-description {
-    flex-grow: 1; /* Allow the description to take up remaining space */
+    padding: 10px;
 }
+
+.event-content {
+    padding: 15px;
+    text-align: center;
+}
+
+
 
 .event-description h3 {
     color: #333;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: normal; /* Adjust font weight for readability */
     text-align: left; /* Align text to the left */
+    line-height: 1.5;
 }
+
+
 
 .container {
     display: flex;
@@ -188,34 +175,87 @@ h5 {
 
     /* Footer */
 
+/* Footer Styling */
+footer {
+    background-color: #20e020;
+    color: white;
+    padding: 40px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    border-top: 3px solid #447926; /* Slight border at the top for separation */
+}
+
+.footer-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Socials Section */
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.socials p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Social Icons */
+.socials a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px; /* Rounded edges for a softer look */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effects */
+    filter: grayscale(100%); /* Makes the image grayscale by default */
+}
+
+.socials a:nth-child(2) img {
+    filter: invert(36%) sepia(91%) saturate(1675%) hue-rotate(191deg) brightness(94%) contrast(88%);
+}
+
+/* Instagram icon (approximate gradient color) */
+.socials a:nth-child(3) img {
+    filter: invert(43%) sepia(88%) saturate(1497%) hue-rotate(306deg) brightness(95%) contrast(98%);
+}
+
+/* LinkedIn icon (blue) */
+.socials a:nth-child(4) img {
+    filter: invert(44%) sepia(83%) saturate(3958%) hue-rotate(175deg) brightness(90%) contrast(89%);
+}
+
+.socials a img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    opacity: 0.8; /* Slight fade effect */
+}
+
+/* Contact Information */
+footer p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+footer p strong {
+    color: #ffffff; /* Make bold text stand out */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
     footer {
-        display: flex;
-        align-items: flex-start;
-        background-color: #20e020;
-        height: 100px;
-        justify-content: space-around;
+        padding: 30px 10px;
     }
-
-    footer p {
-        font-family: 'Montserrat', sans-serif;
-        color: darkslategrey;
-    }
-
     .socials {
-        display: flex;
-        align-items: flex-start;
-        padding: 10px;
-        gap: 15px;
+        flex-direction: column;
+        gap: 10px;
     }
-
-    .socials img {
-        margin-top: 10px;
-        width: 40px;
-        height: 40px;
+    footer p {
+        font-size: 14px;
     }
-
-    .footer-logo {
-        width: 80px;
-        height: 80px;
-    }
-
+}
