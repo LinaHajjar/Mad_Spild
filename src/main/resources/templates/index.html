@@ -8,14 +8,16 @@
 </head>
 <body>
 <nav class="navigation-bar">
-    <a th:href="@{/index}" class="home">
-        <img class="logo" src="https://img.freepik.com/premium-vector/circular-illustration-green-bucket-with-leaves_339976-60626.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid"></img>
+    <a href="/index" class="logo-link">
+        <img class="logo" src="https://img.freepik.com/premium-vector/circular-illustration-green-bucket-with-leaves_339976-60626.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid" alt="Logo">
     </a>
-    <a th:href="@{/organisation}" class="Organisation">Organisation</a>
-    <a th:href="@{/virksomhed}" class="Virksomhed">Virksomhed</a>
-    <a th:href="@{/about}" class="Om os">Om os</a>
+    <div class="nav-links">
+        <a href="/organisation" class="nav-item">Organisation</a>
+        <a href="/virksomhed" class="nav-item">Virksomhed</a>
+        <a href="/about" class="nav-item">Om os</a>
+    </div>
 </nav>
-    <div class="info">
+
         <h1>Danmark - Mod madspild</h1>
         <div class="statistic">
             <ul>
@@ -27,10 +29,14 @@
             <img src="https://img.freepik.com/free-photo/arrangement-compost-made-rotten-food-with-copy-space_23-2149073761.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid">
         </div>
 
+<div class="parallax-section"></div>
+
         <div class="diagram">
             <img src="https://static.wixstatic.com/media/d13dbe_179b497a75bf4c62934ac2075a5e0c56~mv2.png/v1/fill/w_858,h_535,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/JASSSSSSSS_PNG.png">
             <p>Blandt det årlige madforbrug forekommer størstedelen af madspild i husholdninger, detailhandel og fødevareindustrien. Madspild har alvorlige konsekvenser for både miljøet og økonomien. Ressourcer som vand, energi og jord går tabt, og spildt mad udleder metan, der bidrager til klimaforandringer. Husholdninger står for over en tredjedel af det samlede madspild, hvilket også medfører store økonomiske omkostninger. Ved at reducere madspild kan vi beskytte miljøet, spare penge og sikre, at flere mennesker får adgang til mad.</p>
         </div>
+
+    <div class="parallax-section"></div>
 
         <div class="forbruger-tips">
 
@@ -46,11 +52,13 @@
             </ul>
 
             <div class="fact">
-                Vidste du at...
+                <img src="https://img.freepik.com/free-vector/eye-catching-did-you-know-dark-background-interesting-fact_1017-54197.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid">
                 <div class="hidden-text">Forbrugerne og detailhandelen spilder hvert år så meget mad, at det svarer til 9.730 indkøbsvogne fulde af mad hver dag.</div>
             </div>
 
         </div>
+
+<div class="parallax-section"></div>
 
         <div class="FN">
 
@@ -60,20 +68,19 @@
 
             <img src="https://img.freepik.com/free-vector/hand-drawn-sdg-infographic-infographic_23-2149433631.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid" class="FN-image">
 
-        </div>
 
     </div>
-    <footer>
-        <img class="footer-logo" src="https://img.freepik.com/premium-vector/circular-illustration-green-bucket-with-leaves_339976-60626.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid">
-        <div class="socials">
-            <p>Socials: </p>
-            <a><img src="https://img.freepik.com/free-psd/social-media-logo-design_23-2151296987.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid"></a>
-            <a><img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid"></a>
-            <a><img src="https://img.freepik.com/free-psd/social-media-logo-design_23-2151296991.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid"></a>
-            </div>
-        <p><strong>Address: </strong>Guldbergsgade 29N, 2200 København</p>
-        <p><strong>CVR: </strong>12356345</p>
-    </footer>
+<footer>
+    <img class="footer-logo" src="https://img.freepik.com/premium-vector/circular-illustration-green-bucket-with-leaves_339976-60626.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid">
+    <div class="socials">
+        <p>Socials: </p>
+        <a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcFJREFUSEu11T+oT2EYwPHPLYUwyCIki0GRjKRkEJIuMYgsFDKIlAzyJxnUFQburTtYlEEU+TORQWajvyXCYjAoinCeen86vZ3znt8P92znff58n+d9/rxDJvgbmmD/ugCTsQXrsBQL8Atv8BT3cRPf2wItAdbjcnJaSvQV9uFBk1Ib4GQV6YkBru8njuBcbtMEOIXjAzivqx7ExfpBDtiI2wXnn3AYj/A26Y2ks/iNTFbhcc9HHTAdLzG7BfADi/E8k9cBIQr5kl7h64Ao1Ggh+mvYXpOvwQqsxfLMbhNuxVkdcAcbCoBjOJPkW3G9oDuOPTngPeYUjA7hQpJHMc8XdGNGluWAr5jynwCfq26amQO+YFoG+NiRVag/xOrMLnzNyAEvsDBT/IC5HTPxDvMynWdYlAOuVm26Y8AMYld9awjgSjUnu3LANkQrtn2DFLmxTSfhNea3EPoF/LmePIP4jw167x8AscpX4knPR9Oyi2V1oAHSTwan80XZBIizsd4k1kBdgLNVwY/mgZUenJ1pWmclozZAbIC9uNt0tV1P5lTsxub0NF5KTvZjuNqaNxAt+VdPZsd89SfuyqA/LwWt33YeVhnsaaE0AAAAAElFTkSuQmCC"/></a>
+        <a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAeNJREFUSEvF1T+ozmEUB/DPdUlSN5KUwcLtJv/jjpiMZHCVYjESxSCDlAwGJYrproRBYpJFuotYkKRkUCYWhZL/z9Hze3s8fr/cN73dM73vOec533O+589vyIBlaMDxzRjAchzFZqymM5GfeIYpnMfLmpG2Cg5k5zl90vcVBzFZvqsBNuIhZvUZvHH/hk140ihqgJvY2Ufwt1iDCVzM724k2nZ1AbzGshaANziD51iEMRxH+AdAZP0ov3uFFV0AHzG/AribM/qAxdn2DqtwB59SzxZgSbaF30gbQPD+vQoegUZzsL3Yipic+ynLyxjOE1Q+iz70BqTsQSi/VABncSxlfgkxXaUE54dwG9sLQyQ5u62CUMaolbIft3LGsQ+lPMU6nEx7cqow/MiV/VaVFcTvMJYSc30tUXMPayvb4wS+ASdSwNOVrRe3HtPgt5TgeR8u4HBli809kivcUdg6exA+NUBUtB7zsAdbcqBo8tU0unNbmvw5+/9FUSjaxjRmPZYvKCkl7lTQt7TSv08VL2x0NUVxrHpLUjUuNrRctG1V4ObvC6zsArieguzueDhd9RXEzrRSNI4H/3ns4mDGCLcChHKg57oBLj84ccy6pPzgnEsjHYfuD5mxT+Z0G/pPv4FX8AszSlgZRYBdrAAAAABJRU5ErkJggg=="/></a>
+        <a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASxJREFUSEvl1TsvBFEYh/HfCp2Igso3oNXoKFQKIa6hk/AtJD6GS4m4h0InLo1G7xPoRKUl7Elem81erZndxlQzOe88z5z/Oe+cgjZfhTbzdVxwh/GMs7rHxA+jcgZfGeFV3EaC66ie+oO0xK0nOMBqgA+x3KKkqWAX6wHdw1regnfsowsr6M1b8IrngA5jsLgzHuJ5CP3YxgdGMFfxAU0jOsZSvHSERUo9M4MnvJRBN4vjW2XPTQUnAU3vJNlCxFVvG3fjDX0hySTowRVGQ5waK12PGMtDkLr0NkA72Ij7S0znIUhrcBGgWlGmoaYRncb0U3GCzCPl/IlZnIfgLMbK6/6JoFGjDURzpShq1f0qohb/DFXldRc5jwPnBpM/yo4fmVmjqZ9V7uQAfgNR+VIZag7oTQAAAABJRU5ErkJggg=="/></a>
+    </div>
+    <p><strong>Address: </strong>Guldbergsgade 29N, 2200 København</p>
+    <p><strong>CVR: </strong>12356345</p>
+</footer>
 
 
 

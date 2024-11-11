@@ -1,55 +1,79 @@
+/* Reset some default styling for better control */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+
+}
+
 body {
     padding-top: 90px; /* Adjust based on your navbar height */
 }
 
+h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
 
+}
 
-.navigation-bar{
-background-color: #20e020;
-display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    padding: 20px;
+.navigation-bar {
+    background-color: #20e020;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and links */
+    padding: 10px 5%; /* Adjusts padding and center alignment */
     height: 70px;
-    border-radius: 10px;
-    position: fixed; /* Fixes the navbar to the viewport */
-    top: 0; /* Positions it at the top */
-    width: 100%; /* Makes it span the full width of the page */
-    z-index: 1000; /* Ensures it stays above other content */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
 }
 
-.navigation-bar a{
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    text-decoration: none;
-}
-
-.navigation-bar a:hover{
-    text-shadow: 2px 2px 4px whitesmoke;
-}
-
-.logo{
-    width: 70px;
-    height: 70px;
+/* Logo Styling */
+.logo {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
-.info{
-    margin-top: 10px;
-    text-align: center;
+.logo-link {
+    display: flex;
+    align-items: center;
 }
-.info h1{
-    font-weight: bolder;
-    font-size: 40px;
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
-    color: black;
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 30px; /* Space between nav items */
+}
+
+.nav-item {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;/* Smooth transition */
+
+}
+
+.nav-item:hover {
+    color: #ffffff; /* Subtle color change on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect */
 }
 
 .statistic{
     display: flex;
     align-items: flex-start;
     margin-top: 90px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .statistic ul{
@@ -59,26 +83,26 @@ display: flex;
     line-height: 1.6; /* Line height for better readability */
     color: #333333; /* Dark color for contrast */
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .statistic ul li {
     margin-bottom: 15px; /* Adds space between list items */
     line-height: 1.5; /* Optional: increase line height for better readability */
 }
+.statistic img{
+    border-radius: 10px;
+}
 
 .diagram{
-    background-image: url("https://img.freepik.com/free-photo/autumn-celebration-healthy-vegetarian-food-with-ripe-fruit-decoration-generated-by-ai_24640-100395.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid");
-    background-attachment: fixed; /* Makes the background stay fixed while scrolling */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the background from repeating */
-    height: 100vh; /* Sets the height to full viewport, adjust as needed */
     display: flex;
     align-items: center; /* Centers items vertically */
     justify-content: center; /* Centers items horizontally */
-    margin-top: 70px;
     padding: 20px;
-
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 
@@ -86,7 +110,6 @@ display: flex;
     margin-top: 50px;
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
     font-weight: 700;
-    color: whitesmoke;
     line-height: 1.8; /* Adjusts line spacing, try values like 1.5 or 1.8 */
     word-spacing: 3px; /* Adds extra spacing between words, adjust as needed */
     text-align: justify; /* Aligns text evenly on both sides */
@@ -97,22 +120,22 @@ display: flex;
 .diagram img{
     width: 50%;
     height: auto;
+    border-radius: 10px;
 }
 
 .forbruger-tips{
-    background-image: url("https://img.freepik.com/free-photo/palatable-open-sandwiches-black_23-2147749518.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid");
-    background-attachment: fixed; /* Makes the background stay fixed while scrolling */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the background from repeating */
-    height: 100vh; /* Sets the height to full viewport, adjust as needed */
-    margin-top: 70px;
+
+    display: flex;/* Arrange items vertically */
+    align-items: flex-start; /* Center horizontally */
+    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .forbruger-tips h1{
     margin-top: 50px;
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
-    color: whitesmoke;
     font-weight: bolder;
     font-size: 70px;
     text-align: left; /* Aligns the h1 text to the left */
@@ -121,7 +144,6 @@ display: flex;
 
 .forbruger-tips ul{
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
-    color: whitesmoke;
     line-height: 1.8; /* Adjusts line spacing, try values like 1.5 or 1.8 */
     word-spacing: 3px; /* Adds extra spacing between words, adjust as needed */
     max-width: 50%; /* Limits the list width to half the container */
@@ -129,47 +151,93 @@ display: flex;
     list-style-position: inside; /* Ensures bullets are inside the list box */
 }
 
-footer{
-    display: flex;
-    align-items: flex-start;
+footer {
     background-color: #20e020;
-    height: 100px;
-    justify-content: space-around;
-}
-
-footer p{
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font*/
-    color: darkslategrey;
-}
-
-.socials{
+    color: white;
+    padding: 40px 5%;
     display: flex;
-    align-items: flex-start;
-    padding: 10px;
-    gap: 15px; /* Adds space between each social media icon*/
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    border-top: 3px solid #447926; /* Slight border at the top for separation */
 }
 
-.socials img{
-    margin-top: 10px;
-    width: 40px;
-    height: 40px;
+.footer-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-.footer-logo{
-    width: 80px;
-    height: 80px;
+/* Socials Section */
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
+.socials p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Social Icons */
+.socials a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px; /* Rounded edges for a softer look */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effects */
+    filter: grayscale(100%); /* Makes the image grayscale by default */
+}
+
+.socials a:nth-child(2) img {
+    filter: invert(36%) sepia(91%) saturate(1675%) hue-rotate(191deg) brightness(94%) contrast(88%);
+}
+
+/* Instagram icon (approximate gradient color) */
+.socials a:nth-child(3) img {
+    filter: invert(43%) sepia(88%) saturate(1497%) hue-rotate(306deg) brightness(95%) contrast(98%);
+}
+
+/* LinkedIn icon (blue) */
+.socials a:nth-child(4) img {
+    filter: invert(44%) sepia(83%) saturate(3958%) hue-rotate(175deg) brightness(90%) contrast(89%);
+}
+
+.socials a img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    opacity: 0.8; /* Slight fade effect */
+}
+
+/* Contact Information */
+footer p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+footer p strong {
+    color: #ffffff; /* Make bold text stand out */
+}
 
 .fact {
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 20px 20px;
     background: #1a1a12;
-    color: whitesmoke;
     display: inline-block;
     position: relative;
     cursor: pointer;
-    text-align: left;
+    color: ghostwhite;
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 130px;
+}
+
+.fact img{
+    width: auto;
+    height: 400px;
+    border-radius: 10px;
 }
 
 .hidden-text {
@@ -196,26 +264,25 @@ footer p{
     transition-delay: 0.5s; /* No delay on hover-out */
 }
 
-.fact:hover{
-    text-shadow: 1px 1px 2px white, -1px -1px 2px white;
-}
 
+.face:hover {
+    text-shadow: 2px 2px 4px rgba(250, 250, 250, 0.3);
+}
 
 .FN{
     display: flex;
     align-items: flex-start;
-    margin-top: 100px;
     gap: 20px;
-    border: 1px solid black; /* Slim border */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-bottom: 30px;
-
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .FN-image{
     width: 600px;
     height: auto;
+    border-radius: 10px;
 }
 
 .FN-text p{
@@ -226,3 +293,16 @@ footer p{
     word-spacing: 3px;
 }
 
+
+.parallax-section {
+    background-image: url("https://img.freepik.com/free-photo/river-surrounded-by-forests-cloudy-sky-thuringia-germany_181624-30863.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 200px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
