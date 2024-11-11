@@ -1,3 +1,12 @@
+/* Reset some default styling for better control */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+
+}
+
 body {
     padding-top: 90px; /* Adjust based on your navbar height */
 }
@@ -22,7 +31,8 @@ h1{
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
 }
 
 /* Logo Styling */
@@ -46,9 +56,10 @@ h1{
 .nav-item {
     color: white;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
-    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+    transition: color 0.3s ease, text-shadow 0.3s ease;/* Smooth transition */
+
 }
 
 .nav-item:hover {
@@ -274,7 +285,7 @@ footer p strong {
 
 
 .parallax-section {
-    background-image: url("https://img.freepik.com/free-photo/top-view-trash-cooking-concept_23-2149056457.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid");
+    background-image: url("https://img.freepik.com/free-photo/river-surrounded-by-forests-cloudy-sky-thuringia-germany_181624-30863.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
