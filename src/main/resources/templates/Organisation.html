@@ -8,44 +8,55 @@
 
 <body>
 
-<!-- Shouldn't we make a class to the navigation bar, that we implement in each of classes:
-index, organisation, virksomhed, for at avoid redundancy?-->
-    <nav class="navigation-bar">
-        <a th:href="@{/index}" class="home">
-            <img class="logo" src="https://img.freepik.com/premium-vector/circular-illustration-green-bucket-with-leaves_339976-60626.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid"></img>
-        </a>
-        <a th:href="@{/organisation}" class="Organisation">Organisation</a>
-        <a th:href="@{/virksomhed}" class="Virksomhed">Virksomhed</a>
-        <a th:href="@{/about}" class="Om os">Om os</a>
-    </nav>
-
-<!--end of navigation bar copied from yousaf-->
+<nav class="navigation-bar">
+    <a href="/index" class="logo-link">
+        <img class="logo" src="https://img.freepik.com/premium-vector/circular-illustration-green-bucket-with-leaves_339976-60626.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid" alt="Logo">
+    </a>
+    <div class="nav-links">
+        <a href="/organisation" class="nav-item">Organisation</a>
+        <a href="/virksomhed" class="nav-item">Virksomhed</a>
+        <a href="/about" class="nav-item">Om os</a>
+    </div>
+</nav>
+<!--end of navigation bar-->
 
     <section id="volontær projekter">
         <h1>Her kan du se en liste over de tidligere projekter med success.</h1>
 
-        <div class="event">
-            <a th:href="@{/Sommer2022}">
-                <div class="event-content">
-                    <img src="images/sommer2022.jpeg" alt="sommer2022">
-                    <div class="event-description">
-                        <h3>Sommer 2022: et første skridt for at stoppe madspild</h3>
-                </div>
-              </div>
-            </a>
-        </div>
 
-
-        <div class="event">
-            <a th:href="@{/Sommer2023}">
-                <div class="event-content">
+        <div class="event-row">
+            <div class="event-column1">
+                <a th:href="@{/Sommer2023}">
                     <img src="images/sommer2023.jpeg" alt="Sommer 2023: stoppe madspild på mit arbejdsplads">
-                    <div class="event-description">
-                        <h3>Sommer 2023: stoppe madspild på mit arbejdsplads</h3>
-                    </div>
-                </div>
-            </a>
+                </a>
+            </div>
+            <div class="event-column2">
+                <p>Sommer 2023: stoppe madspild på mit arbejdsplads</p>
+                <p>Sommeren 2023 lancerede vi et initiativ for at reducere madspild på arbejdspladsen.</p>
+                <p>Ved at implementere nye rutiner for indkøb og portionsanpasning,</p>
+                <p>samt ved at opfordre medarbejderne til at være mere opmærksomme på deres madvaner,</p>
+                <p>lykkedes det os at få medarbejderne til at fokusere på at reducere madspild.</p>
+                <p>En madspildskonkurrence bidrog til at skabe engagement blandt medarbejderne,</p>
+                <p>og vi lærte, at det er vigtigt at involvere alle for at opnå succes.</p>
+            </div>
         </div>
+
+
+        <div class="event-row">
+            <div class="event-column1">
+                <a th:href="@{/Sommer2022}">
+                    <img src="images/sommer2022.jpeg" alt="sommer2022">
+                </a>
+            </div>
+            <div class="event-column2">
+                <p>Sommer 2022: et første skridt for at stoppe madspild</p>
+            </div>
+        </div>
+
+
+        <section class="parallax-section">
+        </section>
+
 
         <div class="event">
             <a th:href="@{/Foraar2024}">

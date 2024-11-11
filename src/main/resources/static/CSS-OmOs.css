@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     line-height: 1.8;
-
 }
 
 body {
@@ -12,7 +11,6 @@ body {
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
     color: black;
     font-size: 18px;
-
     background-color: #2a9d8f;
 }
 h1, h2, h3 {
@@ -67,8 +65,6 @@ h1, h2, h3 {
     color: #ffffff; /* Subtle color change on hover */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect */
 }
-
-
 
 .main-content, .bottom-content {
     display: flex;

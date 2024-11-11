@@ -1,41 +1,118 @@
-.navigation-bar{
+/* Reset some default styling for better control */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 90px; /* Space for fixed navbar */
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-size: 18px;
+    background-color: white;
+}
+
+/* Navbar container */
+.navigation-bar {
     background-color: #20e020;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    padding: 20px;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and links */
+    padding: 10px 5%; /* Adjusts padding and center alignment */
     height: 70px;
     border-radius: 10px;
-
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-.navigation-bar a{
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    text-decoration: none;
-}
-
-.navigation-bar a:hover{
-    text-shadow: 2px 2px 4px whitesmoke;
-}
-
-.logo{
-    width: 70px;
-    height: 70px;
+/* Logo Styling */
+.logo {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
-/*end of the navigation bar. copy paste from yousef css index*/
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 30px; /* Space between nav items */
+}
+
+.nav-item {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+}
+
+.nav-item:hover {
+    color: #ffffff; /* Subtle color change on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+/*end of the navigation bar.*/
+
+/*parallax section */
+.parallax-section {
+    background-image: url('images/paralaxeffectomos.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.event-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.event-column1 {
+    flex: 0 0 auto;  /* Ensure the image column does not stretch */
+    margin: 0;  /* Remove margin between image and text */
+    justify-content: right;
+}
+
+.event-column1 img {
+    width: 50%;  /* You can adjust this to the desired width */
+    height: auto;
+    border-radius: 10px;
+    justify-content: right;
+}
+
+.event-column2 {
+    flex: 1;  /* This will make the text take up the remaining space */
+    padding-left: 20px; /* Optional: add some space between image and text */
+    justify-content: left;
+
+}
 
 
 .event {
     display: flex; /*flexbox to align image and text horizontally */
     align-items: center; /* Vertically center align */
-    margin-bottom: 20px ; /* Add space between events */
+    margin-bottom: 20px; /* Add space between events */
     box-sizing: border-box;
     padding: 10px;
 }
+
 
 .event-content {
     display: flex; /* Flexbox for aligning image and description */
@@ -49,26 +126,25 @@
     border-radius: 10px; /*rounded corners for images*/
 }
 
-.event-description{
-    flex-grow: 1;    /* Allow the description to take up remaining space */
-
+.event-description {
+    flex-grow: 1; /* Allow the description to take up remaining space */
 }
 
-.event-description h3{
+.event-description h3 {
     color: #333;
     font-size: 18px;
-    font-weight: normal;        /* Adjust font weight for readability */
-    text-align: left;           /* Align text to the left */
+    font-weight: normal; /* Adjust font weight for readability */
+    text-align: left; /* Align text to the left */
 }
 
-.container{
+.container {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start; /* Align items to the start */
     gap: 20px; /* Space between the logo and text */
 }
 
-.container img{
+.container img {
     width: 400px; /*fixed images width*/
     height: auto;
     border-radius: 10px; /*rounded corners for images*/
@@ -79,20 +155,21 @@
     line-height: 1.6; /* Improve text readability */
 }
 
-h1{
+h1 {
     text-align: center;
     color: green;
 }
 
-h2{
+h2 {
     text-align: center;
     color: darkcyan;
 }
 
-h3{
+h3 {
     text-align: center;
 }
-h4{
+
+h4 {
     text-align: center;
     color: limegreen;
     font-size: xx-large;
@@ -102,40 +179,43 @@ h4{
 h4:hover {
     transform: scale(1.1); /* Scale up on hover */
 }
-h5{
+
+h5 {
     font-size: 50px;
     text-align: left;
     font-size: large;
 }
 
-/* Footer */
-footer {
-    display: flex;
-    align-items: flex-start;
-    background-color: #20e020;
-    height: 100px;
-    justify-content: space-around;
-}
+    /* Footer */
 
-footer p {
-    font-family: 'Montserrat', sans-serif;
-    color: darkslategrey;
-}
+    footer {
+        display: flex;
+        align-items: flex-start;
+        background-color: #20e020;
+        height: 100px;
+        justify-content: space-around;
+    }
 
-.socials {
-    display: flex;
-    align-items: flex-start;
-    padding: 10px;
-    gap: 15px;
-}
+    footer p {
+        font-family: 'Montserrat', sans-serif;
+        color: darkslategrey;
+    }
 
-.socials img {
-    margin-top: 10px;
-    width: 40px;
-    height: 40px;
-}
+    .socials {
+        display: flex;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 15px;
+    }
 
-.footer-logo {
-    width: 80px;
-    height: 80px;
-}
+    .socials img {
+        margin-top: 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-logo {
+        width: 80px;
+        height: 80px;
+    }
+
