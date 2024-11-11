@@ -55,6 +55,7 @@ display: flex;
     display: flex;
     align-items: flex-start;
     margin-top: 90px;
+    margin-bottom: 10px;
 }
 
 .statistic ul{
