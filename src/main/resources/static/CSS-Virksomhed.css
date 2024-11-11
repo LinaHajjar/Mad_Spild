@@ -1,10 +1,13 @@
 
+
+/* General Styles */
 body {
+    font-family: 'Montserrat', sans-serif;
     padding-top: 90px; /* Adjust based on your navbar height */
+    margin: 0;
 }
 
-
-.logo{
+.logo {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -14,13 +17,13 @@ body {
 .navigation-bar {
     background-color: #20e020;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+    align-items: center; /* Align navbar content vertically */
+    justify-content: space-between; /* Space out navbar items */
     padding: 20px;
     height: 70px;
     border-radius: 10px;
     position: fixed; /* Fixes the navbar to the viewport */
-    top: 0; /* Positions it at the top */
+    top: 0;
     width: 100%; /* Makes it span the full width of the page */
     z-index: 1000; /* Ensures it stays above other content */
 }
@@ -30,41 +33,17 @@ body {
     font-weight: bold;
     font-size: 30px;
     text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for link color change */
 }
 
 .navigation-bar a:hover {
     text-shadow: 2px 2px 4px whitesmoke;
+    color: #fff;
 }
 
-/* Donere Mad Section */
-.donere-mad {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    line-height: 1.8;
-    word-spacing: 3px;
-    display: flex;
-    align-items: stretch;
-    gap: 20px;
+/* Backgrounds for Sections */
 
-}
-
-.donere-mad img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: flex;
-    margin-top: -600px;
-    border-radius: 10px;
-    object-fit: contain;
-}
-
-
-
-/* Donere Mad Background */
-.donerBackground {
+.Background1 {
     background-image: url("https://th.bing.com/th/id/R.08d6f39e32c845e5764633804b4053d8?rik=cP%2bliPko9tNKiQ&pid=ImgRaw&r=0");
     background-attachment: fixed;
     background-size: cover;
@@ -79,7 +58,7 @@ body {
     z-index: -1;
 }
 
-.donerBackground2 {
+.Background2 {
     background-image:url("https://images.squarespace-cdn.com/content/v1/62d22ed8ab8d965a2eb43e26/cf431cb0-86b9-490c-ab57-32da6288ae76/foodwasteamerica.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -94,178 +73,155 @@ body {
     z-index: -1;
 }
 
-/* Statistiker Section */
-#Statistiker {
-    background-color: white;
+
+
+/*all sections */
+
+/* Section container */
+.section-container {
+    display: flex;
+    flex-direction: row; /* Text on the left, image on the right */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Vertically center content */
+    margin-bottom: 10px;
     padding: 20px;
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+    border-radius: 5px;
+    min-height: 300px;
+    height:80vh;
+}
+
+/* Text content */
+.text-content {
+    justify-content: flex-start;
+    flex: 2; /* Allows text to fill the available space */
+    max-width: 50%;
+    margin-top: 15px;
+    padding: 30px;
+    display: flex;
+    text-align: left; /* Ensures text is aligned to the left */
+    height: 100%;
     line-height: 1.8;
-    word-spacing: 3px;
-    display: flex;
-    align-items: stretch;
-    gap: 20px;
+    flex-direction: column;
+    overflow-y: auto;
+    font-size: 18px;
+
 }
 
-#Statistiker img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: block;
-    margin-top: 50px;
+/* Image content */
+.image-content {
+    flex: 1; /* Image takes up remaining space */
+    display: flex;
+    justify-content: center; /* Centers the image */
+    max-width: 50%;
+    align-items: flex-start;
     border-radius: 10px;
-    display: flex;
-    object-fit: contain;
+    padding: 0;
 }
 
-
-
-/* Partner Med Os Section */
-.Partner-Med-Os {
-    background-color: white;
-    padding: 40px;
+.image-content img {
+    max-width: 80%; /* Ensures the image fits the container */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    display: flex;
-    align-items: stretch;
-    gap: 20px;
-    line-height: 1.8;
-    word-spacing: 3px;
-}
-.Partner-Med-Os strong {
-    color: #333;
-}
-
-.Partner-Med-Os img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: flex;
-    margin-top: 50px;
-    border-radius: 10px;
-    object-fit: contain;
+    transform: translateY(-150px);
 }
 
 
 
-.Partner-Med-Os.text{
-    width: 100%;
-}
 
-/* Footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styling */
 footer {
+    background-color: #2a9d8f; /* Match the navbar color for consistency */
+    color: white;
+    padding: 40px 5%;
     display: flex;
-    align-items: flex-start;
-    background-color: #20e020;
-    height: 100px;
-    justify-content: space-around;
-}
-
-footer p {
-    font-family: 'Montserrat', sans-serif;
-    color: darkslategrey;
-}
-
-.socials {
-    display: flex;
-    align-items: flex-start;
-    padding: 10px;
-    gap: 15px;
-}
-
-.socials img {
-    margin-top: 10px;
-    width: 40px;
-    height: 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    border-top: 3px solid #1e7a6a; /* Slight border at the top for separation */
 }
 
 .footer-logo {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-/* General Styles */
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.info {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.info h1 {
-    font-weight: bolder;
-    font-size: 40px;
-    color: black;
-}
-
-/* Statistic Section */
-.statistic {
+/* Socials Section */
+.socials {
     display: flex;
-    align-items: flex-start;
-    margin-top: 90px;
+    align-items: center;
+    gap: 15px;
 }
 
-.statistic ul {
+.socials p {
+    margin: 0;
     font-size: 18px;
-    font-weight: 700;
-    line-height: 1.6;
-    color: #333333;
-    margin-right: 10px;
+    font-weight: bold;
 }
 
-.statistic ul li {
-    margin-bottom: 15px;
-    line-height: 1.5;
+/* Social Icons */
+.socials a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px; /* Rounded edges for a softer look */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effects */
 }
 
-/* Doner Background Section */
-.donerBackground p {
-    margin-top: 50px;
-    font-weight: 700;
-    color: whitesmoke;
-    line-height: 1.8;
-    word-spacing: 3px;
-    text-align: justify;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-indent: 0;
+.socials a img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    opacity: 0.8; /* Slight fade effect */
 }
 
-.donerBackground img {
-    width: 50%;
-    height: auto;
-    object-fit: cover;
+/* Contact Information */
+footer p {
+    margin: 5px 0;
+    font-size: 16px;
 }
 
-/* Forbruger Tips Section */
-.forbruger-tips {
-    background-image: url("https://img.freepik.com/free-photo/palatable-open-sandwiches-black_23-2147749518.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    margin-top: 70px;
+footer p strong {
+    color: #ffffff; /* Make bold text stand out */
 }
 
-.forbruger-tips h1 {
-    margin-top: 50px;
-    color: whitesmoke;
-    font-weight: bolder;
-    font-size: 70px;
-    text-align: left;
-    padding-left: 20px;
-}
-
-.forbruger-tips ul {
-    color: whitesmoke;
-    line-height: 1.8;
-    word-spacing: 3px;
-    max-width: 50%;
-    padding-left: 20px;
-    list-style-position: inside;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    footer {
+        padding: 30px 10px;
+    }
+    .socials {
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer p {
+        font-size: 14px;
+    }
 }
