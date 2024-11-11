@@ -25,7 +25,8 @@ h1, h2, h3 {
     justify-content: space-between; /* Space between logo and links */
     padding: 10px 5%; /* Adjusts padding and center alignment */
     height: 70px;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     position: fixed;
     top: 0;
     width: 100%;
