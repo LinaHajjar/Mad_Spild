@@ -43,16 +43,25 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+    line-height: 1.8;
+    word-spacing: 3px;
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+
 }
 
 .donere-mad img {
     width: 100%;
     max-width: 600px;
     height: auto;
-    display: block;
-    margin-top: 20px;
+    display: flex;
+    margin-top: -600px;
     border-radius: 10px;
+    object-fit: contain;
 }
+
+
 
 /* Donere Mad Background */
 .donerBackground {
@@ -92,6 +101,11 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+    line-height: 1.8;
+    word-spacing: 3px;
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
 }
 
 #Statistiker img {
@@ -99,19 +113,27 @@ body {
     max-width: 600px;
     height: auto;
     display: block;
-    margin-top: 20px;
+    margin-top: 50px;
     border-radius: 10px;
+    display: flex;
+    object-fit: contain;
 }
+
+
 
 /* Partner Med Os Section */
 .Partner-Med-Os {
     background-color: white;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    line-height: 1.8;
+    word-spacing: 3px;
 }
-
 .Partner-Med-Os strong {
     color: #333;
 }
@@ -120,9 +142,16 @@ body {
     width: 100%;
     max-width: 600px;
     height: auto;
-    display: block;
-    margin-top: 20px;
+    display: flex;
+    margin-top: 50px;
     border-radius: 10px;
+    object-fit: contain;
+}
+
+
+
+.Partner-Med-Os.text{
+    width: 100%;
 }
 
 /* Footer */
@@ -209,6 +238,7 @@ body {
 .donerBackground img {
     width: 50%;
     height: auto;
+    object-fit: cover;
 }
 
 /* Forbruger Tips Section */

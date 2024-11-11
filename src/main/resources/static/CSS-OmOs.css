@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     line-height: 1.8;
+
 }
 
 body {
@@ -11,7 +12,8 @@ body {
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
     color: black;
     font-size: 18px;
-    background-color: #2a9d8f;
+
+    background-color: white;
 }
 h1, h2, h3 {
     font-size: 45px;
@@ -66,6 +68,8 @@ h1, h2, h3 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect */
 }
 
+
+
 .main-content, .bottom-content {
     display: flex;
     padding: 50px 10%;
@@ -104,7 +108,7 @@ h1, h2, h3 {
 
 /* Footer Styling */
 footer {
-    background-color: #2a9d8f; /* Match the navbar color for consistency */
+    background-color: #20e020;
     color: white;
     padding: 40px 5%;
     display: flex;
@@ -112,7 +116,7 @@ footer {
     align-items: center;
     text-align: center;
     gap: 20px;
-    border-top: 3px solid #1e7a6a; /* Slight border at the top for separation */
+    border-top: 3px solid #447926; /* Slight border at the top for separation */
 }
 
 .footer-logo {
@@ -141,6 +145,21 @@ footer {
     height: 30px;
     border-radius: 5px; /* Rounded edges for a softer look */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effects */
+    filter: grayscale(100%); /* Makes the image grayscale by default */
+}
+
+.socials a:nth-child(2) img {
+    filter: invert(36%) sepia(91%) saturate(1675%) hue-rotate(191deg) brightness(94%) contrast(88%);
+}
+
+/* Instagram icon (approximate gradient color) */
+.socials a:nth-child(3) img {
+    filter: invert(43%) sepia(88%) saturate(1497%) hue-rotate(306deg) brightness(95%) contrast(98%);
+}
+
+/* LinkedIn icon (blue) */
+.socials a:nth-child(4) img {
+    filter: invert(44%) sepia(83%) saturate(3958%) hue-rotate(175deg) brightness(90%) contrast(89%);
 }
 
 .socials a img:hover {

@@ -2,7 +2,12 @@ body {
     padding-top: 90px; /* Adjust based on your navbar height */
 }
 
+h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
 
+}
 
 .navigation-bar{
 background-color: #20e020;
@@ -65,18 +70,14 @@ display: flex;
     margin-bottom: 15px; /* Adds space between list items */
     line-height: 1.5; /* Optional: increase line height for better readability */
 }
+.statistic img{
+    border-radius: 10px;
+}
 
 .diagram{
-    background-image: url("https://img.freepik.com/free-photo/autumn-celebration-healthy-vegetarian-food-with-ripe-fruit-decoration-generated-by-ai_24640-100395.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid");
-    background-attachment: fixed; /* Makes the background stay fixed while scrolling */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the background from repeating */
-    height: 100vh; /* Sets the height to full viewport, adjust as needed */
     display: flex;
     align-items: center; /* Centers items vertically */
     justify-content: center; /* Centers items horizontally */
-    margin-top: 70px;
     padding: 20px;
 
 }
@@ -86,7 +87,6 @@ display: flex;
     margin-top: 50px;
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
     font-weight: 700;
-    color: whitesmoke;
     line-height: 1.8; /* Adjusts line spacing, try values like 1.5 or 1.8 */
     word-spacing: 3px; /* Adds extra spacing between words, adjust as needed */
     text-align: justify; /* Aligns text evenly on both sides */
@@ -97,22 +97,19 @@ display: flex;
 .diagram img{
     width: 50%;
     height: auto;
+    border-radius: 10px;
 }
 
 .forbruger-tips{
-    background-image: url("https://img.freepik.com/free-photo/palatable-open-sandwiches-black_23-2147749518.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid");
-    background-attachment: fixed; /* Makes the background stay fixed while scrolling */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the background from repeating */
-    height: 100vh; /* Sets the height to full viewport, adjust as needed */
-    margin-top: 70px;
+
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center horizontally */
 }
 
 .forbruger-tips h1{
     margin-top: 50px;
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
-    color: whitesmoke;
     font-weight: bolder;
     font-size: 70px;
     text-align: left; /* Aligns the h1 text to the left */
@@ -121,7 +118,6 @@ display: flex;
 
 .forbruger-tips ul{
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
-    color: whitesmoke;
     line-height: 1.8; /* Adjusts line spacing, try values like 1.5 or 1.8 */
     word-spacing: 3px; /* Adds extra spacing between words, adjust as needed */
     max-width: 50%; /* Limits the list width to half the container */
@@ -165,11 +161,13 @@ footer p{
     font-size: 16px;
     padding: 10px 20px;
     background: #1a1a12;
-    color: whitesmoke;
     display: inline-block;
     position: relative;
     cursor: pointer;
-    text-align: left;
+    color: ghostwhite;
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 130px;
 }
 
 .hidden-text {
@@ -204,7 +202,6 @@ footer p{
 .FN{
     display: flex;
     align-items: flex-start;
-    margin-top: 100px;
     gap: 20px;
     border: 1px solid black; /* Slim border */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -216,6 +213,7 @@ footer p{
 .FN-image{
     width: 600px;
     height: auto;
+    border-radius: 10px;
 }
 
 .FN-text p{
@@ -226,3 +224,16 @@ footer p{
     word-spacing: 3px;
 }
 
+
+.parallax-section {
+    background-image: url("https://img.freepik.com/free-photo/palatable-open-sandwiches-black_23-2147749518.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
