@@ -60,7 +60,7 @@ h1{
     display: flex;
     align-items: flex-start;
     margin-top: 90px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 .statistic ul{
@@ -85,7 +85,8 @@ h1{
     align-items: center; /* Centers items vertically */
     justify-content: center; /* Centers items horizontally */
     padding: 20px;
-
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -108,9 +109,10 @@ h1{
 
 .forbruger-tips{
 
-    display: flex;
-    flex-direction: column; /* Arrange items vertically */
-    align-items: center; /* Center horizontally */
+    display: flex;/* Arrange items vertically */
+    align-items: flex-start; /* Center horizontally */
+    margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 .forbruger-tips h1{
@@ -214,6 +216,11 @@ footer p strong {
     margin-bottom: 130px;
 }
 
+.fact img{
+    width: auto;
+    height: 400px;
+}
+
 .hidden-text {
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font*/
     visibility: hidden;
@@ -238,20 +245,17 @@ footer p strong {
     transition-delay: 0.5s; /* No delay on hover-out */
 }
 
-.fact:hover{
-    text-shadow: 1px 1px 2px white, -1px -1px 2px white;
-}
 
+.face:hover {
+    text-shadow: 2px 2px 4px rgba(250, 250, 250, 0.3);
+}
 
 .FN{
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    border: 1px solid black; /* Slim border */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-bottom: 30px;
-    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .FN-image{
@@ -270,11 +274,11 @@ footer p strong {
 
 
 .parallax-section {
-    background-image: url("https://img.freepik.com/free-photo/palatable-open-sandwiches-black_23-2147749518.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid");
+    background-image: url("https://img.freepik.com/free-photo/top-view-trash-cooking-concept_23-2149056457.jpg?ga=GA1.1.519555005.1729767876&semt=ais_hybrid");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw;
     height: 200px; /* Adjust height as needed */
     display: flex;
     align-items: center;
