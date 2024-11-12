@@ -80,12 +80,6 @@ body {
     text-align: center;
 }
 
-.event-image{
-    display: flex;
-    align-items: flex-start; /* Aligns the top of the text and image */
-    gap: 20px; /* Space between the image and text */
-}
-
 .event img {
     width: 400px;
     height: auto;
@@ -97,31 +91,52 @@ body {
     transform: scale(1.1);
 }
 
-.event {
+
+
+
+.event-1, .event-2, .event-3, .event-4 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 
-.event-description {
-    flex: 1;
-    text-align: left;
-    margin-left: 40px; /* space at the left */
-    margin-top: 40px;
+.event-image img{
+    width: 600px;
+    height: auto;
+    margin: 50px;
+    border-radius: 10px;
 }
+
+.event-description{
+    width: 55%; /* Adjust as needed */
+}
+
+
 
 .container {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start; /* Align items to the start */
+    align-items: center;
+    /* Align items to the start */
     gap: 20px; /* Space between the logo and text */
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 50px;
 }
 
-.container img {
-    width: 400px; /*fixed images width*/
+.container-img img{
+    width: 500px;
     height: auto;
-    border-radius: 10px; /*rounded corners for images*/
+    border-radius: 10px;
+}
+
+.container-text{
+    margin-left: 30px;
 }
 
 #Join-us {
@@ -132,6 +147,8 @@ body {
 h1 {
     text-align: center;
     color: green;
+    margin-top: 90px;
+    margin-bottom: 90px;
 }
 
 h2 {
@@ -152,6 +169,7 @@ h4 {
     color: limegreen;
     font-size: xx-large;
     transition: transform 0.3s ease-in-out; /* Add transition effect */
+    margin-bottom: 50px;
 }
 
 h4:hover {
