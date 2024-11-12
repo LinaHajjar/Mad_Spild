@@ -1,5 +1,6 @@
+/* -SK = Sebastian kærlighilsen -YJ = Yousaf -LH = Lina Hajaar -KG = Klaus Gregersen */
 
-
+/* KG* Global CSS*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,10 +17,9 @@ body {
 
     background-color: white;
 }
-h1, h2, h3 {
-    font-size: 45px;
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
-}
+
+
+
 
 /* Navbar container */
 .navigation-bar {
@@ -70,6 +70,9 @@ h1, h2, h3 {
 }
 
 
+
+
+/*           virksomhed       */
 
 /* Backgrounds for Sections */
 
@@ -165,6 +168,12 @@ h1, h2, h3 {
     transform: translateY(50px); /* Adjust this value to move the image higher */
 }
 
+.virksomhed h1{
+    text-align: left;
+}
+
+/*      virksomhed     */
+
 
 
 /*index*/
@@ -255,8 +264,10 @@ h1, h2, h3 {
     list-style-position: inside; /* Ensures bullets are inside the list box */
 }
 
+/*end of index*/
 
-/*omOs*/
+
+/*       omOs*/
 
 
 
@@ -296,10 +307,143 @@ h1, h2, h3 {
     text-align: center;
 }
 
+/*end of om os/
+
 
 /*organisation*/
 
+/*parallax section */
+.parallax-section {
+    background-image: url('images/paralaxeffectomos.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
 
+.event img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth transition for the effect */
+}
+
+.event img:hover {/*"hop" effect*/
+    transform: scale(1.1);
+}
+
+
+
+
+.event-1, .event-2, .event-3, .event-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.event-image img{
+    width: 600px;
+    height: auto;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.event-description{
+    width: 55%; /* Adjust as needed */
+}
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    /* Align items to the start */
+    gap: 20px; /* Space between the logo and text */
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.container-img img{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+.container img{
+    width: 500px;
+    height: auto;
+}
+.container-text{
+    margin-left: 30px;
+}
+
+#Join-us {
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+h2 {
+    text-align: center;
+    color: darkcyan;
+}
+
+h3 {
+    color: #333;
+    font-size: 20px;
+    font-weight: normal; /* Adjust font weight for readability */
+    text-align: left; /* Align text to the left */
+    line-height: 1.5;
+}
+
+h4 {
+    text-align: center;
+    color: limegreen;
+    font-size: xx-large;
+    transition: transform 0.3s ease-in-out; /* Add transition effect */
+    margin-bottom: 50px;
+}
+
+h4:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+h5 {
+    font-size: 50px;
+    text-align: left;
+    font-size: large;
+}
+h6 {
+    font-size: 50px;
+    text-align: left;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+/* end of organisation*/
 
 
 
