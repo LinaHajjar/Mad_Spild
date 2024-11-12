@@ -9,7 +9,8 @@ body {
     padding-top: 90px; /* Adjust based on your navbar height */
 }
 
-h1{
+h1,h2,h3{
+    font-size:45px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
@@ -298,7 +299,6 @@ footer p strong {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
-    height: 200px; /* Adjust height as needed */
     display: flex;
     align-items: center;
     justify-content: center;

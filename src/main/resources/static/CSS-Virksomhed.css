@@ -79,7 +79,7 @@ h1, h2, h3 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,15 +91,16 @@ h1, h2, h3 {
 .Background2 {
     background-image:url("https://images.squarespace-cdn.com/content/v1/62d22ed8ab8d965a2eb43e26/cf431cb0-86b9-490c-ab57-32da6288ae76/foodwasteamerica.jpg");
     background-attachment: fixed;
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-size: cover;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 70px;
-    padding: 20px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
     z-index: -1;
 }
 
@@ -165,6 +166,138 @@ h1, h2, h3 {
 }
 
 
+
+/*index*/
+
+.statistic{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.statistic ul{
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    font-size: 18px; /* Font size for bullet points */
+    font-weight: 700; /* Bold text for emphasis */
+    line-height: 1.6; /* Line height for better readability */
+    color: #333333; /* Dark color for contrast */
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.statistic ul li {
+    margin-bottom: 15px; /* Adds space between list items */
+    line-height: 1.5; /* Optional: increase line height for better readability */
+}
+.statistic img{
+    border-radius: 10px;
+}
+
+.diagram{
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+.diagram p{
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    font-weight: 700;
+    line-height: 1.8; /* Adjusts line spacing, try values like 1.5 or 1.8 */
+    word-spacing: 3px; /* Adds extra spacing between words, adjust as needed */
+    text-align: justify; /* Aligns text evenly on both sides */
+    padding-left: 20px; /* Adjust left padding as needed */
+    padding-right: 20px; /* Optional: add right padding for symmetry */
+    text-indent: 0; /* Ensures first line starts aligned with others */
+}
+.diagram img{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+.forbruger-tips{
+
+    display: flex;/* Arrange items vertically */
+    align-items: flex-start; /* Center horizontally */
+    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.forbruger-tips h1{
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    font-weight: bolder;
+    font-size: 70px;
+    text-align: left; /* Aligns the h1 text to the left */
+    padding-left: 20px;
+}
+
+.forbruger-tips ul{
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    line-height: 1.8; /* Adjusts line spacing, try values like 1.5 or 1.8 */
+    word-spacing: 3px; /* Adds extra spacing between words, adjust as needed */
+    max-width: 50%; /* Limits the list width to half the container */
+    padding-left: 20px; /* Adjust to bring text close to bullet points */
+    list-style-position: inside; /* Ensures bullets are inside the list box */
+}
+
+
+/*omOs*/
+
+
+
+.main-content, .bottom-content {
+    display: flex;
+    padding: 50px 10%;
+}
+
+.main-content .image, .bottom-content .image {
+    flex: 1;
+}
+
+.main-content .text, .bottom-content .text {
+    flex: 1;
+    padding: 20px;
+}
+
+.main-content .image img, .bottom-content .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.parallax-section {
+    background-image: url('images/paralaxeffectomos.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*organisation*/
 
 
 
