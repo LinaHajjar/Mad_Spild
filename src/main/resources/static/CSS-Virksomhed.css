@@ -152,9 +152,19 @@ body {
 }
 
 
-.image-content graph {
-    margin-top: 20px;
+
+.section-container .graph {
+    /* Adjusts the position of the graph image */
+    margin-top: 10px; /* Adjust to lower or raise the image */
+    width: 100%; /* Adjust as needed for size */
+    height: auto; /* Keeps image aspect ratio */
+
+    /* Example for aligning within the container */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 .image-content img {
     max-width: 80%; /* Ensures the image fits the container */
@@ -169,7 +179,7 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
-
+    transform: translateY(50px); /* Adjust this value to move the image higher */
 }
 
 .virksomhed h1{
