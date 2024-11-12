@@ -3,8 +3,8 @@
 /* KG* Global CSS*/
 * {
     box-sizing: border-box;                     /* SD* The "box-sizing" CSS property sets how the total width and height of an element is calculated.*/
-    margin: 0;                                  /* KG* Vi sætter margin, som er */
-    padding: 0;
+    margin: 0;                                  /* KG* Margin er det der er udenfor boxen, hvor vi her sætter den til 0*/
+    padding: 0;                                 
     line-height: 1.8;
 }
 /* KG* Dette er global css Indeni body*/
