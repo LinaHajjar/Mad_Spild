@@ -151,11 +151,17 @@ body {
     padding: 0;
 }
 
+
+.image-content graph {
+    margin-top: 20px;
+}
+
 .image-content img {
     max-width: 80%; /* Ensures the image fits the container */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
     transform: translateY(-100px);
+
 }
 
 .donerMad {
