@@ -155,7 +155,7 @@ body {
 
 .section-container .graph {
     /* Adjusts the position of the graph image */
-    margin-top: 40px; /* Adjust to lower or raise the image */
+    margin-top: 80px; /* Adjust to lower or raise the image */
     width: 100%; /* Adjust as needed for size */
     height: auto; /* Keeps image aspect ratio */
 
