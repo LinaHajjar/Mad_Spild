@@ -135,7 +135,7 @@ body {
     height: 100%;
     line-height: 1.8;
     flex-direction: column;
-    overflow-y: auto;
+    overflow-y: hidden;
     font-size: 18px;
 
 }
@@ -155,7 +155,7 @@ body {
 
 .section-container .graph {
     /* Adjusts the position of the graph image */
-    margin-top: 100px; /* Adjust to lower or raise the image */
+    margin-top: 40px; /* Adjust to lower or raise the image */
     width: 100%; /* Adjust as needed for size */
     height: auto; /* Keeps image aspect ratio */
 
