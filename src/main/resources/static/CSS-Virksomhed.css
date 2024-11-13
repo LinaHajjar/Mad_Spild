@@ -135,7 +135,7 @@ body {
     height: 100%;
     line-height: 1.8;
     flex-direction: column;
-    overflow-y: auto;
+    overflow-y: hidden;
     font-size: 18px;
 
 }
@@ -151,11 +151,27 @@ body {
     padding: 0;
 }
 
+
+
+.section-container .graph {
+    /* Adjusts the position of the graph image */
+    margin-top: 40px; /* Adjust to lower or raise the image */
+    width: 100%; /* Adjust as needed for size */
+    height: auto; /* Keeps image aspect ratio */
+
+    /* Example for aligning within the container */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .image-content img {
     max-width: 80%; /* Ensures the image fits the container */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
-    transform: translateY(-100px);
+
+
 }
 
 .donerMad {
