@@ -21,7 +21,7 @@ body {
 
 /* Navbar container */
 .navigation-bar {
-    background-color: #20e020;                  /* KG* Navbarens baggrundsfarve */
+    background-color: forestgreen;                  /* KG* Navbarens baggrundsfarve */
     display: flex;                              /* KG* display: flex is a property that turns an HTML element into a flexible container */
     align-items: center;                        /* KG/chatGPT The align-items property in CSS is used within a flex container (an element with display: flex) to control the vertical alignment of flex items along the cross axis. The cross axis is perpendicular to the main axis, which is defined by the flex-direction property.*/
     justify-content: space-between;             /* Space between logo and links */
@@ -458,29 +458,9 @@ h6 {
 /* end of organisation*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer Styling */
 footer {
-    background-color: #20e020; /* Match the navbar color for consistency */
+    background-color: forestgreen; /* Match the navbar color for consistency */
     color: white;
     padding: 40px 5%;
     display: flex;
